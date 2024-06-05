@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="{{ url_for('static', filename='LogoTaco (1).png') }}" type="image/png">
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+    <title>CRUD</title>
+</head>
+
+<body>
+<div id="caja1">
+    <div id="logo">
+        <img src="static/LogoTaco (1).png" id="taco">
+    </div>
+    <div id="crudlet">
+        CRUD
+    </div>
+</div>
+<div id="caja2">
+    <div id="lista">
+        <label for="tablas">Elige una tabla:</label>
+        <input list="tablas" id="tabla" name="tablas">
+
+        <datalist id="tablas">
+            <option value="tabla1">
+            <option value="tabla2">
+            <option value="tabla3">
+            <option value="tabla4">
+            <option value="tabla5">
+        </datalist>
+
+    </div>
+    <div id="verta">
+
+        <label>Aqui se mostraran las tablas cuando se conecte la db</label>
+    </div>
+</div>
+</body>
+</html>
